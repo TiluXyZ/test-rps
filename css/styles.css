@@ -143,7 +143,6 @@ a {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    row-gap: 0.5rem;
   }
   .container .options .o-images .first {
     grid-column-start: 1;
@@ -182,6 +181,11 @@ a {
     grid-row-end: 3;
   }
 }
+@media screen and (min-height: 720px) {
+  .container {
+    grid-gap: 8rem;
+  }
+}
 header {
   background-color: #0b132b;
   padding: 0 5px;
@@ -216,10 +220,15 @@ header .title-h h1 {
     padding-left: 10px;
   }
 }
+@media screen and (min-height: 720px) {
+  header {
+    padding: 10px 25px;
+  }
+}
 .score {
   background-color: #3a506b;
-  border-radius: 5px;
-  padding: 10px;
+  border-radius: 8px;
+  padding: 20px 15px;
 }
 .score h2 {
   color: #3ed8d5;
@@ -245,23 +254,18 @@ header .title-h h1 {
   border-radius: 2px;
 }
 
-@media screen and (min-width: 340px) and (max-width: 600px) {
-  .score {
-    width: 200px;
-  }
-}
 @media screen and (min-width: 1500px) {
   .score {
     width: 400px;
     margin: 0 auto;
-    padding: 25px 15px;
+    padding: 25px 20px;
   }
 }
 .options {
   background-color: #0b132b;
   padding: 10px;
   margin: 0 20px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 .options h3 {
   color: #eee;
@@ -299,7 +303,6 @@ header .title-h h1 {
 .options .o-images .o-text {
   text-align: center;
   font-size: 18px;
-  font-weight: 600;
 }
 .options .o-images .rock {
   color: #ec3838;
@@ -311,6 +314,21 @@ header .title-h h1 {
   color: #36ad6a;
 }
 
+@media screen and (min-width: 1200px) {
+  .options {
+    margin: 0 100px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .options {
+    margin: 0 150px;
+  }
+}
+@media screen and (min-height: 720px) {
+  .options {
+    padding: 30px 0;
+  }
+}
 footer {
   display: flex;
   justify-content: center;
@@ -322,6 +340,12 @@ footer span {
   padding: 5px 0;
   font-size: 18px;
   text-align: center;
+}
+
+@media screen and (min-height: 720px) {
+  footer {
+    padding: 15px 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
