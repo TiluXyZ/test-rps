@@ -14,7 +14,18 @@ a {
 }
 
 .container {
-  background-color: #1c2541;
+  background-color: #1e2847;
+}
+
+body::-webkit-scrollbar {
+  background-color: #27345a;
+  width: 13px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #131b31;
+  border-radius: 10px;
+  height: 120px;
 }
 
 .container {
@@ -187,7 +198,7 @@ a {
   }
 }
 header {
-  background-color: #0b132b;
+  background-color: #0c1635;
   padding: 0 5px;
 }
 header .image {
@@ -199,7 +210,7 @@ header .image img {
 header .title-h {
   display: flex;
 }
-header .title-h h1 {
+header .title-h .title {
   display: flex;
   color: #dfdfdf;
   align-items: center;
@@ -215,7 +226,7 @@ header .title-h h1 {
   header .image {
     width: 60px;
   }
-  header .title-h h1 {
+  header .title-h .title {
     font-size: 26px;
     padding-left: 10px;
   }
@@ -246,7 +257,7 @@ header .title-h h1 {
   margin-left: 5px;
 }
 .score .s-panel .points {
-  color: #2b2b2b;
+  color: #777777;
   background-color: #eeeeee;
   font-size: 22px;
   text-align: center;
@@ -254,6 +265,18 @@ header .title-h h1 {
   border-radius: 2px;
 }
 
+@media screen and (min-width: 340px) {
+  .score {
+    width: 200px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 600px) {
+  .score {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 1500px) {
   .score {
     width: 400px;
@@ -262,7 +285,7 @@ header .title-h h1 {
   }
 }
 .options {
-  background-color: #0b132b;
+  background-color: #0c1635;
   padding: 10px;
   margin: 0 20px;
   border-radius: 8px;
