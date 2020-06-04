@@ -89,17 +89,58 @@ body::-webkit-scrollbar-thumb {
   grid-row-end: 5;
 }
 
+@media screen and (min-width: 1200px) {
+  .container .options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .container .options .c-h2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .container .options .option {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 1rem;
+  }
+  .container .options .first {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .container .options .second {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .container .options .third {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
 header {
   background-color: #363636;
   padding: 5px;
 }
 header .title {
   display: block;
-  color: #dfdfdf;
+  color: #eee;
   text-align: center;
   font-size: 24px;
   font-family: "Spectral", serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 @media screen and (min-width: 232px) {
@@ -107,7 +148,7 @@ header .title {
     padding: 8px;
   }
   header .title {
-    font-size: 26px;
+    font-size: 28px;
   }
 }
 @media screen and (min-height: 720px) {
@@ -117,12 +158,14 @@ header .title {
 }
 .principal {
   background-color: #a64eff;
-  padding: 15px;
+  padding: 16px 20px;
 }
 .principal h1 {
-  color: #eee;
+  color: #e4e4e4;
   text-align: center;
   font-size: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 .principal p {
   color: #cacaca;
@@ -136,9 +179,11 @@ header .title {
 .options .c-h2 h2 {
   display: inline;
   color: #eee;
+  font-weight: 400;
+  font-family: "Spectral", serif;
   position: relative;
   text-align: center;
-  padding: 10px 6px;
+  padding: 10px 6px 5px;
 }
 .options .c-h2 h2::before {
   content: "";
@@ -179,16 +224,25 @@ header .title {
   color: #a46cff;
   width: 100px;
   text-align: center;
+  font-weight: 600;
   padding: 10px 15px;
   border-style: solid;
   border-width: 2px;
+}
+@media screen and (min-width: 1200px) {
+  .options .option span a:hover {
+    color: #363636;
+    background-color: #a46cff;
+  }
 }
 .options .option span a:active {
   color: #363636;
   background-color: #a46cff;
 }
-.options .first {
-  margin-top: 0;
+@media screen and (max-width: 1200px) {
+  .options .first {
+    margin-top: 0;
+  }
 }
 
 footer {
