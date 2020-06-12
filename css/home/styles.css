@@ -95,7 +95,7 @@ body::-webkit-scrollbar-thumb:active {
   grid-row-end: 5;
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1000px) {
   .container .options {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -163,7 +163,7 @@ header .title {
   }
 }
 .principal {
-  background-color: #a64eff;
+  background-color: #af5fff;
   padding: 30px 25px;
 }
 .principal h1 {
@@ -229,9 +229,10 @@ header .title {
   width: 100%;
 }
 .options .option h3 {
-  color: #a64dfa;
+  color: #b15dff;
   font-size: 24px;
   font-family: "Spectral", serif;
+  font-weight: 500;
   text-align: center;
 }
 .options .option p {
@@ -275,12 +276,27 @@ header .title {
     width: 600px;
   }
 }
+@media screen and (min-width: 1000px) {
+  .options .option {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .options .option {
+    width: 350px;
+  }
+}
 @media screen and (min-width: 1300px) {
   .options .option {
     width: 400px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 2000px) {
+  .options .option {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 999px) {
   .options .first {
     margin-top: 0;
   }
