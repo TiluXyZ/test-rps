@@ -261,6 +261,11 @@ header .home {
     color: #9da9da;
     font-size: 1.5rem;
   }
+  header .home a:active {
+    color: #a46cff;
+  }
+}
+@media screen and (min-width: 500px) and (min-width: 1200px) {
   header .home a:hover {
     color: #a46cff;
   }
