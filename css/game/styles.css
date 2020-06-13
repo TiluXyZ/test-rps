@@ -342,6 +342,9 @@ header .home {
   border-width: 15px;
   cursor: pointer;
 }
+.options .o-images .option:active {
+  background-color: #9ba9e4;
+}
 .options .o-images .option img {
   width: 60px;
   height: 60px;
@@ -349,11 +352,34 @@ header .home {
 .options .o-images .first {
   border-color: #ec3838;
 }
+.options .o-images .first:active {
+  border-color: #ff4343;
+}
 .options .o-images .second {
   border-color: #426be6;
 }
+.options .o-images .second:active {
+  border-color: #4e74e4;
+}
 .options .o-images .third {
   border-color: #36ad6a;
+}
+.options .o-images .third:active {
+  border-color: #49b477;
+}
+@media screen and (min-width: 1200px) {
+  .options .o-images .option:hover {
+    background-color: #9ba9e4;
+  }
+  .options .o-images .first:hover {
+    border-color: #ff4343;
+  }
+  .options .o-images .second:hover {
+    border-color: #4e74e4;
+  }
+  .options .o-images .third:hover {
+    border-color: #49b477;
+  }
 }
 .options .o-images .o-text {
   text-align: center;
