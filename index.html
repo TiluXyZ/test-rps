@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio | Game RPS</title>
+    <title>Game RPS</title>
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/home/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Spectral&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Game RPS">
+    <meta property="og:description" content="Piedra, papel o tijera es un juego en el cual deberás enfrentarte a la computadora, tendrás que escoger una de las tres opciones.">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/571379522897838125/721908436920434738/GameRPS.png">
+    <meta name="author" content="Tilu">
+    <meta name="theme-color" content="#af5fff">
 </head>
 <body>
     <div class="container">
@@ -21,7 +26,7 @@
                 Hay tres modalidades, dependiendo de la que elijas, podrás jugar más o menos rondas. Se obtendrá un punto cada vez que ganes una ronda. 
             </p>
         </div>
-        <div class="options">
+        <div class="options" id="options">
             <div class="c-h2">
                 <h2>Modalidades</h2>
             </div>
@@ -32,7 +37,7 @@
                     En esta modalidad jugarás contra la computadora a una sola ronda, es decir, solamente habrá un único enfrentamiente.
                 </p>
                 <span>
-                    <a href="./RPS/game.html">Jugar</a>
+                    <a href="#" id="first">Jugar</a>
                 </span>
             </div>
             <div class="second option">
@@ -42,7 +47,7 @@
                     En esta modalidad jugarás contra la computadora al mejor de tres rondas, es decir, el que consiga la mayor cantidad de puntos de tres rondas será el ganador.
                 </p>
                 <span>
-                    <a href="./RPS/game.html">Jugar</a>
+                    <a href="#">Jugar</a>
                 </span>
             </div>
             <div class="third option">
@@ -53,7 +58,7 @@
 
                 </p>
                 <span>
-                    <a href="./RPS/game.html">Jugar</a>
+                    <a href="#">Jugar</a>
                 </span>
             </div>
         </div>
@@ -61,5 +66,6 @@
             <span>&#169 Todos los derechos reservados | Tilu</span>
         </footer>
     </div>
+    <script src="./output/bundle.js"></script>
 </body>
 </html>
